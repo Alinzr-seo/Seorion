@@ -205,4 +205,4 @@ Open to issues, contributions, ideas, or feedback.
 
 ## 📄 License
 
-MIT © [Alinzr](https://github.com/Alinzr-seo)
+MIT © [Alinzr](https://github.com/Alinzr-seo/Seorion?tab=MIT-1-ov-file)
