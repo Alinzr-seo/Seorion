@@ -1,0 +1,60 @@
+{
+	"compilerOptions": {
+		// Enable all strict type-checking options
+		"strict": true,
+
+		// Do not emit output files (tsup handles build output)
+		"noEmit": true,
+
+		// Output folder (used internally by TS)
+		"outDir": "dist",
+
+		// Root source folder
+		"rootDir": "src",
+
+		// Enable source maps for better debugging
+		"sourceMap": true,
+
+		// Use new JSX transform (React 17+)
+		"jsx": "react-jsx",
+
+		// Target modern JavaScript
+		"target": "ES2024",
+
+		// Use latest module system
+		"module": "ESNext",
+
+		// Generate .d.ts files for consumers
+		"declaration": true,
+
+		// Skip type checking for declaration files of dependencies
+		"skipLibCheck": true,
+
+		// Disallow `any` unless explicitly stated
+		"noImplicitAny": true,
+
+		// Generate map files for declarations
+		"declarationMap": true,
+
+		// Enable compatibility with CommonJS modules
+		"esModuleInterop": true,
+
+		// Ensure each file can be safely transpiled in isolation
+		"isolatedModules": true,
+
+		// Enforce null safety
+		"strictNullChecks": true,
+
+		// Use Node.js module resolution strategy
+		"moduleResolution": "Node",
+
+		// Allow default imports from modules without a default export
+		"allowSyntheticDefaultImports": true
+	},
+
+	// Include source files
+	"include": ["src"],
+
+	// Exclude build output and tests
+	"exclude": ["node_modules", "dist", "tests"]
+}

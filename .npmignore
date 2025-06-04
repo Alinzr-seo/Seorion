@@ -1,0 +1,31 @@
+# Source code (do not publish src)
+src/
+
+# Test and example files
+tests/
+example/
+
+# Config files
+*.config.ts
+*.config.d.ts
+tsconfig.json
+tsconfig.*.json
+.env
+*.env.*
+
+# Logs and temp files
+*.log
+*.tsbuildinfo
+.storybook.log
+
+# Do not exclude dist, README, LICENSE, etc.
+# These should remain in the package
+
+# Ensure type declarations and meta files remain
+!dist/
+!README.md
+!LICENSE
+!CHANGELOG.md
+!CONTRIBUTING.md
+!SECURITY.md
+!index.d.ts
