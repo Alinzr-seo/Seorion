@@ -1,24 +1,39 @@
 {
 	"name": "seorion",
-	"version": "0.0.3",
-	"description": "SEO-focused route definition system for React apps using TanStack Router + Helmet + full SEO automation.",
+	"version": "0.1.0",
+	"description": "Universal SEO routing toolkit for React (Vite, Next, SSR) with full TypeScript, CJS/ESM, and JSX/TSX support.",
 	"keywords": [
 		"seo",
-		"router",
+		"routing",
 		"react",
-		"sitemap",
-		"helmet",
+		"vite",
+		"nextjs",
 		"typescript",
 		"tanstack",
-		"vite",
-		"ssr"
+		"helmet",
+		"ssr",
+		"jsx",
+		"tsx",
+		"esm",
+		"cjs",
+		"vue"
 	],
 	"main": "./dist/index.cjs",
-	"module": "./dist/index.js",
+	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
 	"exports": {
-		"import": "./dist/index.js",
-		"require": "./dist/index.cjs"
+		".": {
+			"import": "./dist/index.mjs",
+			"types": "./dist/index.d.ts",
+			"require": "./dist/index.cjs"
+		}
+	},
+	"typesVersions": {
+		"*": {
+			"*": [
+				"./dist/index.d.ts"
+			]
+		}
 	},
 	"type": "module",
 	"files": [
@@ -53,10 +68,10 @@
 		"path-to-regexp": "^6.2.1"
 	},
 	"devDependencies": {
+		"typescript": "^5.8.3",
+		"tsup": "^8.5.0",
 		"@types/node": "^20.0.0",
 		"@types/react": "^18.2.41",
-		"@types/react-dom": "^18.2.19",
-		"tsup": "^8.5.0",
-		"typescript": "^5.8.3"
+		"@types/react-dom": "^18.2.19"
 	}
 }
