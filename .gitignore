@@ -26,7 +26,6 @@ yarn-error.log*
 # Remove the one you use!
 yarn.lock
 pnpm-lock.yaml
-package-lock.json
 
 # Vitest and test coverage
 coverage/
