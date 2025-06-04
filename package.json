@@ -1,6 +1,6 @@
 {
 	"name": "seorion",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "SEO-focused route definition system for React apps using TanStack Router + Helmet + full SEO automation.",
 	"keywords": [
 		"seo",
