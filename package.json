@@ -1,6 +1,6 @@
 {
 	"name": "seorion",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "SEO-focused route definition system for React apps using TanStack Router + Helmet + full SEO automation.",
 	"keywords": [
 		"seo",
@@ -9,17 +9,24 @@
 		"sitemap",
 		"helmet",
 		"typescript",
-		"tanstack"
+		"tanstack",
+		"vite",
+		"ssr"
 	],
-	"main": "./dist/index.js",
-	"module": "./dist/index.mjs",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
+	"exports": {
+		"import": "./dist/index.js",
+		"require": "./dist/index.cjs"
+	},
 	"type": "module",
 	"files": [
 		"dist"
 	],
 	"scripts": {
-		"build": "tsup src/index.tsx --dts --format esm,cjs"
+		"build": "tsup src/index.tsx --dts --format esm,cjs",
+		"prepublishOnly": "npm run build"
 	},
 	"author": {
 		"name": "Alinzr",
@@ -27,7 +34,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Alinzr-seo/Seorion.git"
+		"url": "git+https://github.com/Alinzr-seo/Seorion.git"
 	},
 	"bugs": {
 		"url": "https://github.com/Alinzr-seo/Seorion/issues"
@@ -35,10 +42,10 @@
 	"homepage": "https://github.com/Alinzr-seo/Seorion#readme",
 	"license": "MIT",
 	"peerDependencies": {
-		"react": "^18.0.0",
-		"react-dom": "^18.0.0",
-		"react-helmet-async": "^1.3.0",
-		"react-router-dom": "^6.0.0"
+		"react": ">=18.0.0",
+		"react-dom": ">=18.0.0",
+		"react-router-dom": ">=6.0.0",
+		"react-helmet-async": ">=1.3.0"
 	},
 	"dependencies": {
 		"@tanstack/react-query": "^5.76.1",
