@@ -27,12 +27,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Alinzr-seo/seorion.git"
+		"url": "https://github.com/Alinzr-seo/Seorion.git"
 	},
 	"bugs": {
-		"url": "https://github.com/Alinzr-seo/seorion/issues"
+		"url": "https://github.com/Alinzr-seo/Seorion/issues"
 	},
-	"homepage": "https://github.com/Alinzr-seo/seorion#readme",
+	"homepage": "https://github.com/Alinzr-seo/Seorion#readme",
 	"license": "MIT",
 	"peerDependencies": {
 		"react": "^18.0.0",
